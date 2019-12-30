@@ -2,7 +2,6 @@ package com.renker.game.robot;
 
 import java.awt.AWTException;
 import java.awt.Rectangle;
-import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
@@ -14,7 +13,7 @@ import javax.imageio.ImageIO;
 import com.renker.game.compare.ComparePicture;
 import com.renker.game.compare.Point;
 
-public class GameRobot extends Robot{
+public class GameRobot extends EventRobot{
 	
 	public GameRobot() throws AWTException {
 		super();
@@ -48,33 +47,6 @@ public class GameRobot extends Robot{
 			e.printStackTrace();
 		}
 		return null;
-	}
-	
-	
-	public void leftClick(){
-		this.mousePress(KeyEvent.BUTTON1_MASK);
-		this.mouseRelease(KeyEvent.BUTTON1_MASK);
-	}
-	
-	public void rightClick(){
-		this.mousePress(KeyEvent.BUTTON3_MASK);
-		this.mouseRelease(KeyEvent.BUTTON3_MASK);
-	}
-	
-	public void leftDoubleClick(){
-		this.mousePress(KeyEvent.BUTTON1_MASK);
-		this.mouseRelease(KeyEvent.BUTTON1_MASK);
-		this.delay(100);
-		this.mousePress(KeyEvent.BUTTON1_MASK);
-		this.mouseRelease(KeyEvent.BUTTON1_MASK);
-	}
-	
-	public void rightDoubleClick(){
-		this.mousePress(KeyEvent.BUTTON3_MASK);
-		this.mousePress(KeyEvent.BUTTON3_MASK);
-		this.delay(100);
-		this.mouseRelease(KeyEvent.BUTTON3_MASK);
-		this.mouseRelease(KeyEvent.BUTTON3_MASK);
 	}
 	
 	
