@@ -35,7 +35,6 @@ public class GameRobot extends EventRobot{
 			e.printStackTrace();
 		}
 		
-		
 		return screenImage;
 	}
 	
@@ -49,9 +48,4 @@ public class GameRobot extends EventRobot{
 		return null;
 	}
 	
-	
-	public void mouseMove(Point point){
-		Point center = point.center();
-		this.mouseMove(center.getX(), center.getY());
-	}
 }	

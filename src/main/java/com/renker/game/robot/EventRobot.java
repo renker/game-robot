@@ -3,6 +3,9 @@ package com.renker.game.robot;
 import java.awt.AWTException;
 import java.awt.event.KeyEvent;
 
+import com.renker.game.compare.Point;
+import com.renker.game.exception.ScriptException;
+
 public class EventRobot extends AbstractRobot{
 
 	public EventRobot() throws AWTException {
@@ -78,5 +81,13 @@ public class EventRobot extends AbstractRobot{
 	public void F9() {
 		super.keyPress(KeyEvent.VK_F9);
 		super.keyRelease(KeyEvent.VK_F9);
+	}
+	
+	public void mouseMove(Point point){
+		if(point== null) {
+			throw new ScriptException("未找到坐标");
+		}
+		Point center = point.center();
+		this.mouseMove(center.getX(), center.getY());
 	}
 }

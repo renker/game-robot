@@ -13,7 +13,21 @@ public class Test {
 			robot.mouseMove(p);
 			Thread.sleep(1000);
 			
-			robot.mouseLeftDoubleClick();
+			robot.mouseLeftClick();
+			Thread.sleep(200);
+			robot.mouseLeftClick();
+			
+			Thread.sleep(200);
+			
+			// ===================================
+			Point p2 = robot.findPoint("D:/screenImage/part2.png");
+			robot.mouseMove(p2);
+			Thread.sleep(1000);
+			
+			robot.mouseLeftClick();
+			Thread.sleep(3000);
+			robot.mouseLeftClick();
+			
 			
 			
 			System.out.println(1);
