@@ -1,4 +1,4 @@
-package com.renker.game;
+package com.renker.game.robot;
 
 import java.awt.AWTException;
 import java.awt.Rectangle;

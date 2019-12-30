@@ -4,7 +4,7 @@ import java.awt.AWTException;
 import java.io.File;
 import java.io.FileInputStream;
 
-import com.renker.game.GameRobot;
+import com.renker.game.robot.GameRobot;
 
 public class MainInTest {
 	public static void main(String[] args) {

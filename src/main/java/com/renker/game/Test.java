@@ -1,6 +1,7 @@
 package com.renker.game;
 
 import com.renker.game.compare.Point;
+import com.renker.game.robot.GameRobot;
 
 public class Test {
 	public static void main(String[] args){
