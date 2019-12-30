@@ -19,7 +19,11 @@ public class GameRobot extends EventRobot{
 		super();
 	}
 	
-	public BufferedImage windows(){
+	/**
+	 * 截图
+	 * @return
+	 */
+	public BufferedImage printscreen(){
 		int withd = Toolkit.getDefaultToolkit().getScreenSize().width;
 		int height = Toolkit.getDefaultToolkit().getScreenSize().height;
 		Rectangle rect = new Rectangle(0, 0, withd, height);
@@ -38,10 +42,15 @@ public class GameRobot extends EventRobot{
 		return screenImage;
 	}
 	
+	/**
+	 * 寻找点
+	 * @param partPath
+	 * @return
+	 */
 	public Point findPoint(String partPath){
 		ComparePicture cp = new ComparePicture();
 		try {
-			return cp.matchingPartAtPosition(windows(), ImageIO.read(new File(partPath)));
+			return cp.matchingPartAtPosition(printscreen(), ImageIO.read(new File(partPath)));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
