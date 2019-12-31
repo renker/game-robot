@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ARS2.0 版本发布</title>
+
+	<!-- 引入样式 -->
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<!-- 先引入 Vue -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- 引入组件库 -->
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<!-- 引入axios -->
+	<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+</head>
+<body>
+	<div id="app">
+		<template>
+		  <el-tabs v-model="activeTabName" @tab-click="handleClick">
+		    <el-tab-pane  name="account">
+		    	<span slot="label"><i class="el-icon-menu"></i> 账号面板</span>
+		    	<el-container>
+					<div style="width: 60px;height: 60px ;border: 1px solid; red;"></div>
+					<div style="width: 60px;height: 60px ;border: 1px solid; red;"></div>
+		    	</el-container>
+		    	
+		    	<el-container>
+					<div style="width: 60px;height: 60px ;border: 1px solid; red;"></div>
+					<div style="width: 60px;height: 60px ;border: 1px solid; red;"></div>
+		    	</el-container>
+		    	
+		    	<el-container>
+					<div style="width: 60px;height: 60px ;border: 1px solid; red;"></div>
+					<div style="width: 60px;height: 60px ;border: 1px solid; red;"></div>
+		    	</el-container>
+		    	
+		    	<el-container>
+					<div style="width: 60px;height: 60px ;border: 1px solid; red;"></div>
+					<div style="width: 60px;height: 60px ;border: 1px solid; red;"></div>
+		    	</el-container>
+		    </el-tab-pane>
+		    <el-tab-pane name="config">
+		    	<span slot="label"><i class="el-icon-setting"></i> 配置项</span>
+    			配置项
+		    </el-tab-pane>
+		  </el-tabs>
+		</template>
+	</div>
+	
+</body>
+
+<style>
+	/* .el-tabs {
+		width:340px;
+	}
+	.el-tabs__content {
+		height:500px;
+	} */
+	
+</style>
+
+<script type="text/javascript">
+	new Vue({
+		el: '#app',
+		data:function(){
+			return {
+				activeTabName: 'account'
+			}
+		},
+		methods:{
+			handleClick(tab, event) {
+				console.log(tab, event);
+			}
+		}
+	})
+</script>
+</html>
