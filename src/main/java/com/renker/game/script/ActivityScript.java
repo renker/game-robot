@@ -1,21 +1,26 @@
 package com.renker.game.script;
 
-import com.renker.game.robot.EventRobot;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.renker.game.utils.RandomUtils;
 
 public class ActivityScript extends AbstractScript {
 	
-	private EventRobot eventRobot;
+	private Logger log = LoggerFactory.getLogger(ActivityScript.class);
 	
-	public ActivityScript() {
-		super();
+	@Override
+	public void run() {
+		log.debug("ActivityScript 开始执行 >>>>>>>");
+		boolean flag = true;
+		while (flag) {
+			try {
+				Thread.sleep(RandomUtils.stepDelay());
+				log.debug("执行--------------");
+			} catch (InterruptedException e) {
+				log.error("",e);
+			}
+		}
 	}
-
-	public ActivityScript(EventRobot eventRobot) {
-		super();
-		this.eventRobot = eventRobot;
-	}
-	
-	
-
 	
 }

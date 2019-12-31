@@ -83,6 +83,11 @@ public class EventRobot extends AbstractRobot{
 		super.keyRelease(KeyEvent.VK_F9);
 	}
 	
+	public void tab() {
+		super.keyPress(KeyEvent.VK_TAB);
+		super.keyRelease(KeyEvent.VK_TAB);
+	}
+	
 	public void mouseMove(Point point){
 		if(point== null) {
 			throw new ScriptException("未找到坐标");
@@ -90,4 +95,5 @@ public class EventRobot extends AbstractRobot{
 		Point center = point.center();
 		this.mouseMove(center.getX(), center.getY());
 	}
+	
 }

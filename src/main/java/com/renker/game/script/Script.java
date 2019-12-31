@@ -5,7 +5,7 @@ package com.renker.game.script;
  * @author Chen
  *
  */
-public interface Script {
+public interface Script extends Runnable {
 	
 	/**
 	 * 攻击

@@ -1,6 +1,11 @@
 package com.renker.game.script;
 
 public class AbstractScript implements Script{
+	
+	@Override
+	public void run() {
+		
+	}
 
 	@Override
 	public void attack() {
@@ -21,6 +26,6 @@ public class AbstractScript implements Script{
 	public void rescue() {
 		
 	}
-	
+
 
 }
