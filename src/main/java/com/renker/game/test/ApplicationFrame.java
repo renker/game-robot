@@ -1,4 +1,4 @@
-package com.renker.game;
+package com.renker.game.test;
 
 import java.awt.EventQueue;
 

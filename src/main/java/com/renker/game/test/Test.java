@@ -1,4 +1,4 @@
-package com.renker.game;
+package com.renker.game.test;
 
 import com.renker.game.compare.Point;
 import com.renker.game.robot.GameRobot;

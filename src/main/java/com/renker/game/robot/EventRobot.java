@@ -7,9 +7,6 @@ import com.renker.game.compare.Point;
 import com.renker.game.exception.ScriptException;
 
 public class EventRobot extends AbstractRobot{
-	
-	/** 源点 */
-	private Point originalPoint;
 
 	public EventRobot() throws AWTException {
 		super();

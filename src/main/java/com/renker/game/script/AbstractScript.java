@@ -1,15 +1,24 @@
 package com.renker.game.script;
 
-import java.awt.Robot;
-
-import com.renker.game.robot.AbstractRobot;
-
 public class AbstractScript implements Script{
-	
-	private AbstractRobot robot;
 
 	@Override
-	public void run() {
+	public void attack() {
+		
+	}
+
+	@Override
+	public void defense() {
+		
+	}
+
+	@Override
+	public void cure() {
+		
+	}
+
+	@Override
+	public void rescue() {
 		
 	}
 	

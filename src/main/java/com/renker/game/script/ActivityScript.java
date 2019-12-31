@@ -16,10 +16,6 @@ public class ActivityScript extends AbstractScript {
 	}
 	
 	
-	@Override
-	public void run() {
-		
-	}
 
 	
 }
