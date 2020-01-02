@@ -50,7 +50,7 @@ public class GameRobot extends EventRobot{
 	public Point findPoint(String partPath){
 		ComparePicture cp = new ComparePicture();
 		try {
-			return cp.matchingPartAtPosition(printscreen(), ImageIO.read(new File(partPath)));
+			return cp.matching(printscreen(), ImageIO.read(new File(partPath)));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

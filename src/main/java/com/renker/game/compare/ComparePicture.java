@@ -23,10 +23,10 @@ public class ComparePicture {
 	public Point grayMatchingPartAtPosition(BufferedImage source, BufferedImage part){
 		BufferedImage source_gray = ImageUtils2.gray(source);
 		BufferedImage part_gray = ImageUtils2.gray(part);
-		return matchingPartAtPosition(source_gray, part_gray);
+		return matching(source_gray, part_gray);
 	}
 	
-	public Point matchingPartAtPosition(BufferedImage source, BufferedImage part){
+	public Point matching(BufferedImage source, BufferedImage part){
 		
 		int min_x = source.getMinX();
 		int min_y = source.getMinY();

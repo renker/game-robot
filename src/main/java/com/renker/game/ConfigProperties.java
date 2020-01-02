@@ -3,16 +3,18 @@ package com.renker.game;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-@ConfigurationProperties(prefix="fairyland.security.token")
+@ConfigurationProperties(prefix="sample")
 @EnableConfigurationProperties
 public class ConfigProperties {
-	private String originIcon;
+	
+	/** 源点图标 */
+	private String origin = "D:/icon/origin.png";
 
-	public String getOriginIcon() {
-		return originIcon;
+	public String getOrigin() {
+		return origin;
 	}
 
-	public void setOriginIcon(String originIcon) {
-		this.originIcon = originIcon;
+	public void setOrigin(String origin) {
+		this.origin = origin;
 	}
 }
