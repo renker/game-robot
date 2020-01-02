@@ -1,4 +1,4 @@
-package com.renker.game.compare;
+package com.renker.game.compare.model;
 
 public class Point {
 	private int x;

@@ -1,4 +1,4 @@
-package com.renker.game.compare;
+package com.renker.game.compare.model;
 
 /**
  * 图片坐标信息

@@ -1,4 +1,4 @@
-package com.renker.game.compare;
+package com.renker.game.compare.model;
 
 import java.util.List;
 

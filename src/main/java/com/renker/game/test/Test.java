@@ -1,6 +1,6 @@
 package com.renker.game.test;
 
-import com.renker.game.compare.Point;
+import com.renker.game.compare.model.Point;
 import com.renker.game.robot.GameRobot;
 
 public class Test {

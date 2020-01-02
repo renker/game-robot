@@ -11,7 +11,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 import com.renker.game.compare.ComparePicture;
-import com.renker.game.compare.Point;
+import com.renker.game.compare.model.Point;
 
 public class GameRobot extends EventRobot{
 	

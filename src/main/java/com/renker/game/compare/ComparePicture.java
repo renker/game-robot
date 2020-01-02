@@ -8,6 +8,9 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
+import com.renker.game.compare.model.Fingerprint;
+import com.renker.game.compare.model.Point;
+import com.renker.game.compare.model.Position;
 import com.renker.game.utils.ImageUtils2;
 
 /**

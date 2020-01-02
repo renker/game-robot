@@ -3,7 +3,7 @@ package com.renker.game.robot;
 import java.awt.AWTException;
 import java.awt.event.KeyEvent;
 
-import com.renker.game.compare.Point;
+import com.renker.game.compare.model.Point;
 import com.renker.game.exception.ScriptException;
 
 public class EventRobot extends AbstractRobot{

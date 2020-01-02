@@ -1,4 +1,4 @@
-package com.renker.game.robot;
+package com.renker.game.robot.account;
 
 import java.util.List;
 
