@@ -4,8 +4,8 @@ public class Point {
 	private int x;
 	private int y;
 	
-	private int width;
-	private int height;
+	private int width = 0;
+	private int height = 0;
 	
 	public Point() {
 		super();

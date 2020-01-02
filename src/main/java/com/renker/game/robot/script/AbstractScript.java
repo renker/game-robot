@@ -18,16 +18,15 @@ import com.renker.game.robot.EventRobot;
 
 public abstract class AbstractScript extends EventRobot implements Script{
 	
+	/** 源点 */
 	protected Point origin;
+	/** 任务点 */
+	protected Point task;
 	
 	public AbstractScript() throws AWTException {
 		super();
-		originPoing(0);
-	}
-	
-	public AbstractScript(int index) throws AWTException {
-		super();
-		originPoing(index);
+		origin = searchPoint(SpringHolder.config().getOrigin());
+		task = searchPoint(SpringHolder.config().getTask());
 	}
 	
 	public abstract void run();
@@ -42,17 +41,32 @@ public abstract class AbstractScript extends EventRobot implements Script{
 		
 	}
 
-	/** 在屏幕寻找源点 */
-	public Point originPoing(int index){
+//	/** 在屏幕寻找源点 */
+//	public Point originPoing(int index){
+//		int withd = Toolkit.getDefaultToolkit().getScreenSize().width;
+//		int height = Toolkit.getDefaultToolkit().getScreenSize().height;
+//		Rectangle rect = new Rectangle(0, 0, withd, height);
+//		BufferedImage screen = this.createScreenCapture(rect);
+//		
+//		ComparePicture cp = new ComparePicture();
+//		Point point = cp.matching(screen, image(SpringHolder.config().getOrigin()));
+//		if(point != null){
+//			origin = point;
+//			return point;
+//		} else {
+//			throw new ScriptException("找不到源点，请检查");
+//		}
+//	}
+	
+	public Point searchPoint(String pathname){
 		int withd = Toolkit.getDefaultToolkit().getScreenSize().width;
 		int height = Toolkit.getDefaultToolkit().getScreenSize().height;
 		Rectangle rect = new Rectangle(0, 0, withd, height);
 		BufferedImage screen = this.createScreenCapture(rect);
 		
 		ComparePicture cp = new ComparePicture();
-		Point point = cp.matching(screen, image(SpringHolder.config().getOrigin()));
+		Point point = cp.matching(screen, image(pathname));
 		if(point != null){
-			origin = point;
 			return point;
 		} else {
 			throw new ScriptException("找不到源点，请检查");

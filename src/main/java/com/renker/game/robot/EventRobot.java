@@ -3,10 +3,15 @@ package com.renker.game.robot;
 import java.awt.AWTException;
 import java.awt.event.KeyEvent;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.renker.game.compare.model.Point;
 import com.renker.game.exception.ScriptException;
 
 public class EventRobot extends AbstractRobot{
+	
+	private Logger log = LoggerFactory.getLogger(EventRobot.class);
 
 	public EventRobot() throws AWTException {
 		super();
@@ -93,6 +98,7 @@ public class EventRobot extends AbstractRobot{
 			throw new ScriptException("未找到坐标");
 		}
 		Point center = point.center();
+		log.debug("指针移动至 x="+center.getX() + ", y="+center.getY());
 		this.mouseMove(center.getX(), center.getY());
 	}
 	
